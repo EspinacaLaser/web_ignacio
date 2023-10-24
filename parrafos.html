@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logomovistar.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="horario.html">
+                                    Horario
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-headerfooter-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="p-3">
+                <div id="parrafos" class="py-3">
+                    <h2 class="text-center">PÁRRAFOS</h2>
+                    <p>Voy a hacer dos párrafos y se hacen con la etiqueta 'p'</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis eveniet asperiores
+                        accusamus. Aut ad velit saepe eligendi animi enim veritatis sint provident! Fugiat doloremque
+                        numquam esse temporibus commodi! Illum!</p>
+                    <p>Como vemos, entre cada párrafo hay una línea en blanco. Si queremos hacer un salto de línea sin
+                        dejar ninguna línea en blanco utilizaremos la etiqueta br. <br>Esto está debajo sin línea en
+                        blanco.</p>
+                    <p>Para realizar encabezados utilizamos las etiquetas h1 hasta h6</p>
+                    <h1>Encabezado h1</h1>
+                    <h2>Encabezado h2</h2>
+                    <h3>Encabezado h3</h3>
+                    <h4>Encabezado h4</h4>
+                    <h5>Encabezado h5</h5>
+                    <h6>Encabezado h6</h6>
+                    <p>Para poner una negrita utilizamos la etiqueta 'strong'. <strong>Esto está en negrita</strong></p>
+                    <p>Para poner una cursiva utilizamos la etiqueta 'em'. <em>Esto está en cursiva</em></p>
+                    <p>Para poner un subrayado, utilizamos la etiqueta 'u'. <u>Esto está subrayado</u></p>
+                    <p>Para realizar subíndices y superíndices utilizamos las etiquetas 'sub' y 'sup' respectivamente:</p>
+                    <p>x<sup>2</sup> - x<sub>2</sub></p>
+                    <p>Hay veces que queremos dar diseño a un pequeño contenido y no tenemos etiqueta para ello. En este
+                        caso utilizamos la etiqueta inline span. Voy a poner <span class="text-morado">la letra
+                            MORADA</span>, solo en unas palabras.</p>
+                    <p>Voy a relizar dos cajas con la etiqueta div</p>
+                    <div class="bg-verde">Caja VERDE</div>
+                    <div class="bg-rosa">Caja ROSA</div>
+                    <!-- TODO ESTO SE PUEDE HACER CON CODIGO EN HTML O POR OTRO LADO EN CSS CON UNA CLASS-->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 class="bg-headerfooter-o text-center text-white py-3">&copy; Ignacio Ramos</h3>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

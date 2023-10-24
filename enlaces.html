@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logomovistar.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="horario.html">
+                                    Horario
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-headerfooter-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="p-3">
+                <div id="enlaces" class="py-3">
+                    <h2 class="text-center">ENLACES</h2>
+                    <h2>TIPOS DE ENLACES: </h2>
+                    <h3 class="underlined">Enlace a una página de internet:</h3>
+                    <p><a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" target="_blank">Prueba!</a></p>
+                    <h3 class="underlined">Enlace a una página nuestra:</h3>
+                    <p><a href="inicio.html" target="_blank">Inicio de mi página</a></p>
+                    <h3 class="underlined">Enlace a una página d internet en una ventana nueva:</h3>
+                    <!--SE HACE CON TARGET BLANK, lo he hecho así en todos xd-->
+                    <p><a href="http://www.ies-azarquiel.es/" target="_blank">Web IES AZARQUIEL</a></p>
+                    <h3 class="underlined">Enlace a una función JS:</h3>
+                    <p><a href="javascript:alert('Que pasa pisha aqui Joaquín')">Pulsa!</a></p>
+                    <h3 class="underlined">Enlace a un MAIL:</h3>
+                    <p><a href="mailto:nachoramosmartin2004@gmail.com" target="_blank">Envíame un correo!</a></p>
+                    <h3 class="underlined">Enlace en una imagen:</h3>
+                    <p><a href="https://www.youtube.com/c/jaimealtozano" target="_blank"><img src="img/jaimealtozano.png" alt="altozano"></a></p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h3 class="bg-headerfooter-o text-center text-white py-3">&copy; Ignacio Ramos</h3>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logomovistar.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="horario.html">
+                                    Horario
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-headerfooter-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="p-3">
+                <div id="listas" class="py-3">
+                    <h2 class="text-center">LISTAS</h2>
+                    <h2>TIPOS DE LISTAS</h2>
+                    <h3>Lista desordenada de las asignaturas del grado superior (ul)</h3>
+                    <ul>
+                        <li>Programación</li>
+                        <li>Lenguaje de marcas</li>
+                        <li>Bases de datos</li>
+                        <li>Sistemas informáticos</li>
+                        <li>Entornos de desarrollo</li>
+                        <li>Inglés</li>
+                        <li>FOL</li>
+                    </ul>
+                    <h3>Lista ordenada de tareas (ol) </h3>
+                    <ol>
+                        <li>Hacer la comida</li>
+                        <li>Hacer la tarea</li>
+                        <li>Ir al gimnasio</li>
+                        <li>Ducharse</li>
+                    </ol>
+                    <h3>Lista desordenada de varios niveles ejercicios gym</h3>
+                    <ul>
+                        <li>Pierna
+                            <ul>
+                                <li>Extensión cuádriceps</li>
+                                <li>Gemelos</li>
+                                <li>Sentadilla</li>
+                            </ul>
+                        </li>
+                        <li>Espalda
+                            <ul>
+                                <li>Jalón al pecho</li>
+                                <li>Remo gironda</li>
+                            </ul>
+                        </li>
+                        <li>Abductores
+                            <ul>
+                                <li>Apertura y cerradura</li>
+                            </ul>
+                        </li>
+                        <li>Bíceps
+                            <ul>
+                                <li>Curl predicador</li>
+                                <li>Curl martillo</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Listas ordenadas de varios niveles raperos</h3>
+                    <ol>
+                        <li>Old School
+                            <ol>
+                                <li>Yako Muñoz</li>
+                                <li>Supra Jordan</li>
+                                <li>N-Wise</li>
+                            </ol>
+                        </li>
+                        <li>New School
+                            <ol>
+                                <li>Artupa</li>
+                                <li>Marx</li>
+                                <li>KN</li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h3>Lista desordenada de varios niveles menú del día CUSTOM</h3>
+                    <div id="olcustom">
+                        <ol>
+                            <li>Primeros
+                                <ol>
+                                    <li>Ensalada de la casa</li>
+                                    <li>Lentejas guisadas</li>
+                                    <li>Macarrones con tomate</li>
+                                </ol>
+                            </li>
+                            <li>Segundos
+                                <ol>
+                                    <li>Carnes
+                                        <ol>
+                                            <li>Ternera con patatas</li>
+                                            <li>Pollo con ensalada</li>
+                                        </ol>
+                                    </li>
+                                    <li>Pescados
+                                        <ol>
+                                            <li>Lubina a la espalda</li>
+                                            <li>Merluza en salsa verde</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Postres
+                                <ol>
+                                    <li>Flan casero</li>
+                                    <li>Natillas caseras</li>
+                                    <li>Fruta de temporada</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <h3>Lista desordenada de varios niveles CUSTOM</h3>
+                    <div id="ulcustom">
+                        <ul>
+                            <li>File
+                                <ul>
+                                    <li>Open</li>
+                                    <li>Save</li>
+                                    <li>Exit</li>
+                                </ul>
+                            </li>
+                            <li>Edit
+                                <ul>
+                                    <li>Copy
+                                        <ul>
+                                            <li>All</li>
+                                            <li>Blocked</li>
+                                        </ul>
+                                    </li>
+                                    <li>Paste</li>
+                                </ul>
+                            </li>
+                            <li>Selection
+                                <ul>
+                                    <li>All</li>
+                                </ul>
+                            </li>
+                            <li>View
+                                <ul>
+                                    <li>Window</li>
+                                    <ul>
+                                        <li>Opened</li>
+                                        <li>Closed</li>
+                                    </ul>
+                                    <li>Fullscreen</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Lista ordenada de varios niveles archivos clases CUSTOM</h3>
+                    <div id="ulcustomi">
+                        <ul>
+                            <li>Ejercicios clase
+                                <ul>
+                                    <li>HTML
+                                        <ul>
+                                            <li>inicio.html</li>
+                                            <li>paginas.html</li>
+                                            <li>enlaces.html</li>
+                                            <li>listas.html</li>
+                                        </ul>
+                                    </li>
+                                    <li>CSS
+                                        <ul>
+                                            <li>estilo.css</li>
+                                        </ul>
+                                    </li>
+                                    <li>IMG
+                                        <ul>
+                                            <li>logo.png</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Programacion
+                                <ul>
+                                    <li>Mis programas
+                                        <ul>
+                                            <li>DNI.java</li>
+                                            <li>FechaHora.java</li>
+                                            <li>ConversorBilletes.java</li>
+                                        </ul>
+                                    </li>
+                                    <li>Apuntes</li>
+                                    <ul>
+                                        <li>Teoría power point</li>
+                                        <li>Apuntes ignacio</li>
+                                    </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Listas de definición</h3>
+                    <dl>
+                        <dt>Programación</dt>
+                        <dd>Usamos lenguaje java en Eclipse para hacer programas chulos</dd>
+                        <dt>Inglés</dt>
+                        <dd>El profesor nos anima a leer y escuchar cosas en inglés</dd>
+                        <dt>Lenguaje de marcas</dt>
+                        <dd>Paco nos enseña código html y css para hacer webs vistosas</dd>
+                    </dl>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3 class="bg-headerfooter-o text-center text-white py-3">&copy; Ignacio Ramos</h3>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

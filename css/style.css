@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+.shadow {
+    box-shadow: 0 0 20px rgb(80, 80, 80);
+
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-rosa {
+    background-color: rgb(255, 194, 250);
+}
+.bg-headerfooter-o {
+    background-color: rgb(105, 61, 61);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-verde {
+    background-color: rgb(141, 245, 141);
+}
+.text-white {
+    color: white;
+}
+.text-morado {
+    color: rgb(105, 0, 190);
+    font-size: 20px;
+    background-color: rgb(197, 224, 133);
+}
+.underlined{
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+#ulcustom ul{
+    list-style-type: square;
+}
+#ulcustom ul ul{
+    list-style-type: circle;
+}
+#ulcustom ul ul ul{
+    list-style-type: disc;
+}
+#olcustom ol{
+    list-style-type:upper-latin;
+}
+#olcustom ol ol{
+    list-style-type:upper-roman;
+}
+#olcustom ol ol ol{
+    list-style-type:lower-roman;
+}
+#ulcustomi ul{
+    list-style-image: url(../img/folder.png);
+}
+#ulcustomi ul ul{
+    list-style-image: url(../img/folder.png);
+}
+#ulcustomi ul ul ul{
+    list-style-image: url(../img/eclipse_logo.png);
+}
+#listas dt{
+    background-color: green;
+    color: white;
+    font-size: 22px;
+    display: inline;
+}
+#listas dd{
+    padding: 14px 0;
+    font-size: 15;
+}
+table.tabla_custom{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(142, 163, 233);
+}
+table.tabla_custom th{
+    font-size: 20px;
+    color: rgb(250, 186, 186);
+    background-color: rgb(104, 10, 41);
+}
+table.tabla_custom td{
+    padding: 4px;
+}
+table.tstriped tr:nth-child(odd){
+    background-color: aquamarine;
+}
+table.tstriped tr:nth-child(even){
+    background-color: rgb(127, 182, 255);
+}
+table.horariocustom{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial;
+}
+.fol{
+background-color: rgb(246, 245, 185);
+}
+.prog{
+    background-color:rgb(194, 122, 122);
+}
+.bdd{
+    background-color: rgb(255, 182, 192);
+}
+.ende{
+    background-color:rgb(53, 197, 202);
+}
+.lmgs{
+    background-color: rgb(255, 208, 38);
+}
+.ing{
+    background-color: rgb(255, 137, 69);
+}
+.sisi{
+    background-color: rgb(186, 199, 98);
+}
+table.horariocustom th{
+    color: rgb(70, 162, 151);
+    background-color: rgb(239, 239, 239);
+}
+.titulohorario{
+    font-style: italic;
+    font-size: 20px;
+}

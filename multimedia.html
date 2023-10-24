@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/multimedia.js"></script>
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logomovistar.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="horario.html">
+                                    Horario
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-headerfooter-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="p-3">
+                <div id="parrafos" class="py-3">
+                    <h2 class="text-center">MULTIMEDIA</h2>
+                    <h3>Video</h3>
+                    <video controls width="40%">
+                        <source src="video/Mocejón.mp4" type="video/mp4">
+                    </video>
+                    <h3>Audio</h3>
+                    <audio controls>
+                        <source src="audio/audioigna.mp3" type="audio/mpeg">
+                    </audio>
+                    <h3>Video Youtube iframe</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sDj72zqZakE?si=kqM_TwfUOCqqXG9J"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <h3>Mapa iframe</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6829.5542052035125!2d-112.63609202230707!3d33.746061616021265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d4abdcb521afed%3A0xbf970112b5897d91!2sThe%20Giant%20Triangle!5e0!3m2!1ses!2ses!4v1697531998926!5m2!1ses!2ses"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <audio id="miAudio" hidden controls autoplay>
+                        <source src="audio/p2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h3 class="bg-headerfooter-o text-center text-white py-3">&copy; Ignacio Ramos</h3>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/formularios.js"></script>
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logomovistar.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="horario.html">
+                                    Horario
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-headerfooter-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="p-3">
+                <div id="parrafos" class="py-3">
+                    <h2 class="text-center">FORMULARIOS</h2>
+                    <h3 class="text-center">NINGÚN formulario funciona, de momento ni method, ni php ni Apache</h3>
+                    <br>
+                    <h3 class="underlined">Formulario login simple</h3>
+                    <form action="" method="post">
+                        <p>Nombre: <input type="text" name="nombre" id="" placeholder="Introduce tu nombre..."></p>
+                        <p>Contraseña: <input type="text" name="nombre" id="" placeholder="Introduce una contraseña..."></p>
+                        <p><input type="submit" value="Login"></p>
+                    </form>
+                    <h3 class="underlined">Formulario registro + placeholder</h3>
+                    <form action="" method="post">
+                        <p>Nombre: <input type="text" name="nombre" id="" placeholder="Introduce tu nombre..."></p>
+                        <p>Teléfono: <input type="tel" name="telefono" id="" placeholder="Introduce un número..."></p>
+                        <p><input type="submit" value="Login"></p>
+                    </form>
+                    <h3 class="underlined">Formulario registro + select + br</h3>
+                    <form action="" method="post">
+                        <p>Nombre:
+                            <input type="text" name="nombre" id="" placeholder="Introduce tu nombre...">
+                            &nbspApellidos:&nbsp
+                            <input type="text" name="nombre" id="" placeholder="Introduce tus apellidos...">
+                        </p>
+                        <p>Grado:
+                            <select name="" id="">
+                                <option value="1">CFGS DAW</option>
+                                <option value="2">CFGS DAM</option>
+                                <option value="3">CFGS SMI</option>
+                            </select>
+                            &nbspTurno:
+                            <select name="" id="">
+                                <option value="1">Diurno</option>
+                                <option value="2">Vespertino</option>
+                                <option value="3">Nocturno</option>
+                            </select>
+                        </p>
+                        <p>
+                        </p>
+                        <p><input type="submit" value="Login"></p>
+                    </form>
+                    <h3 class="underlined">Formulario textarea </h3>
+                    <form action="" method="post">
+                        <p>Comentarios <br>
+                            <textarea name="" id="" cols="30" rows="4" placeholder="¡Comenta algo!"></textarea>
+                            <br>
+                        </p>
+                        <p><input type="submit" value="Enviar"></p>
+                    </form>
+                    <h3 class="underlined">Formulario Checkbox + Radiobutton</h3>
+                    <form action="" method="post">
+                        <p>Estado civil
+                            <br>
+                            <input type="radio" name="ec" id="">Casado <br>
+                            <input type="radio" name="ec" id="">Soltero <br>
+                            <input type="radio" name="ec" id="">Divorciado <br>
+                        </p>
+                        <p>Aficiones:
+                            <br>
+                            <input type="checkbox" name="" id="">Cine <br>
+                            <input type="checkbox" name="" id="">Deportes <br>
+                            <input type="checkbox" name="" id="">Cocina <br>
+                            <input type="checkbox" name="" id="">Videojuegos <br>
+                            <input type="checkbox" name="" id="">Dibujar <br>
+                        </p>
+                        <p><input type="submit" value="Enviar"></p>
+                    </form>
+                    <h3 class="underlined">Formularios con elementos HTML5</h3>
+                    <form action="" method="post">
+                        <fieldset>
+                            <legend>Inputs HTML5</legend>
+                            <p>Color: <input type="color" name="color" id=""></p>
+                            <p>Dia/mes/año: <input type="date" name="date" id=""></p>
+                            <p>Dia/mes/año + fecha local: <input type="datetime-local" name="datetime-local" id=""></p>
+                            <p>Archivos del sistema: <input type="file" name="file" id=""></p>
+                            <p>Incremento número: <input type="number" name="number" id="" placeholder="¡Aumenta el valor!"></p>
+                            <p>Rango:
+
+                                <input type="range" name="range" id="rango" min="0" max="100" value="50" step="1">
+                                <br>
+                                <span id="valorSeleccionado">50</span>
+                            </p>
+                            <p>Hora y minutos: <input type="time" name="time" id=""></p>
+                            <p>Enlace: <input type="url" name="url" id="" placeholder="Inserta un enlace..."></p>
+                            <p>Semana: <input type="week" name="week" id=""></p>
+                            <p><input type="submit" value="Enviar"></p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h3 class="bg-headerfooter-o text-center text-white py-3">&copy; Ignacio Ramos</h3>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
